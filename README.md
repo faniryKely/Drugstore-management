@@ -21,4 +21,4 @@ Drugstore is a pharmacy management application designed to help pharmacies effic
 - **PostgreSQL**: Relational database management system used to store application data.
 
 ## Created by : 
-- **Faniry Randrianarivelo
+- Faniry Randrianarivelo
