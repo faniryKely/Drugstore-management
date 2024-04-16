@@ -1,4 +1,4 @@
-package org.app.drugstore.Model.Role;
+package org.app.drugstore.Model.Enum;
 
 public enum Role {
     ADMIN,
