@@ -13,7 +13,7 @@ import java.util.Optional;
 @Data
 public class UserService {
 
-    private UserCrudOperations userCrudOperations;
+    private final UserCrudOperations userCrudOperations;
     private User user;
 
     @Autowired
