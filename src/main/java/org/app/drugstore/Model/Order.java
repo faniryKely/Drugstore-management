@@ -11,7 +11,7 @@ import java.util.Date;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "order")
+@Table(name = "\"order\"")
 public class Order {
     @Id
     @GeneratedValue( strategy = GenerationType.IDENTITY)
@@ -27,5 +27,5 @@ public class Order {
 
     @ManyToOne
     @JoinColumn(name = "drug_id")
-    private Drugs drug;
+    private Drugs drugs;
 }

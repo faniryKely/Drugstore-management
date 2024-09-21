@@ -10,6 +10,7 @@ import java.util.Optional;
 
 
 @Service
+@Data
 public class DrugService {
     private DrugsCrudOperations drugsCrudOperations;
     private Drugs drugs;

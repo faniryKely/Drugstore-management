@@ -19,7 +19,7 @@ import java.util.Set;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "'user'")
+@Table(name = "\"user\"")
 public class User implements UserDetails, Serializable {
     @Id
     @Column(name = "id_user")
@@ -42,7 +42,7 @@ public class User implements UserDetails, Serializable {
     @Enumerated(EnumType.STRING)
     private Role role;
 
-    @OneToMany(mappedBy = "'user'")
+    @OneToMany(mappedBy = "user")
     Set<Order> orders = new HashSet<>();
 
     @Override
