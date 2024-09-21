@@ -17,7 +17,10 @@ public class UserController {
     public UserController(UserService service) {
         this.service = service;
     }
-
+    @GetMapping("/")
+    public ResponseEntity<String> HommePage() {
+        return new ResponseEntity<>("Welcome to Drugstore API", HttpStatus.OK);
+    }
     @PostMapping("/signup")
     public ResponseEntity<User> Register(@RequestBody User user){
         try {
